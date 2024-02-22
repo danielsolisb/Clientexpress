@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+{% block body %}
+{% load static %}
+
+<body>
+    {% include 'base/header.html' %}
+
+    {% include 'base/hero.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'base/footer.html' %}
+    
+    {% block javascript %}
+
+    {% endblock %}
+    
+</body>
+{% endblock %}
